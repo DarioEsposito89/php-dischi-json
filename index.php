@@ -26,10 +26,10 @@
                     <div class="card my-2 p-2" style="background-color: rgb(68, 107, 199);" v-for=" item in diskList ">
                         <img :src="item.poster" alt="" srcset="">
                         <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <p class="card-title"></p>
-                            <p class="card-author"></p>
-                            <p class="card-genre"></p>
-                            <p class="card-year"></p>
+                            <p class="card-title fs-3 fw-bold text-center text-white"> {{ item.title }} </p>
+                            <p class="card-author fs-4 mt-1 fw-bold"> {{ item.author  }} </p>
+                            <p class="card-genre fs-6"> {{ item.genre  }} </p>
+                            <p class="card-year fs-4"> {{ item.year }} </p>
                         </div>
                     </div>
                 </div>
